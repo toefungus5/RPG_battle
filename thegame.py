@@ -19,9 +19,20 @@ def playerturn():
         item()
 
 def act():
-    actchoice = input(int("Which act would you like to do? (1: Check, 2: Compliment, 3: Insult): "))
+    actchoice = #I'm going to put a list here
+    
 def fight():
-    print("fight")
+    damage = random.randint(3,7)
+    print(f"You punched {enemyname}!)
+    enemydialoguenumber = random.randint(1,3)
+    if enemydialoguenumber == 1:
+        enemydialogue = "OWWW DUDE!!! Not cool!!!"
+    elif enemydialoguenumber == 2:
+        enemydialogue = "WHat the HELL man!!! I don't like that!"
+    else:
+        enemydialogue = "Oh you wanna GO buckaroo??? I punch metal for fun!"
+    print(f"{enemyname}: {enemydialogue}")
+    
 def item():
     print("item")
 
