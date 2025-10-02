@@ -1,13 +1,15 @@
 import random
+enemyname = "Seeger"
 
-print("A Seeger approaches you!")
-seegerdialogue = "Legos!"
-seegerattack = 5
-seegerdefense = 5
-seegeranger = 0
+print(f"{enemyname} approaches you!")
+enemydialogue = "Legos!"
+enemyHP = 1000
+enemyattack = 50
+enemydefense = 50
+enemyanger = 0
 
 def playerturn():
-    print(f"{seegerdialogue}")
+    print(f"{enemydialogue}")
     choice = input(int("What will you do? (1: Fight, 2: Act, 3: Use Item): "))
     if choice == 1:
         fight()
